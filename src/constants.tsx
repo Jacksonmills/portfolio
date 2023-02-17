@@ -1,0 +1,20 @@
+export const COLORS = {
+  white: 'hsl(0, 0%, 100%)',
+  offWhite: 'hsl(45, 30%, 96%)',
+  black: 'hsl(0, 0%, 0%)',
+  offblack: 'hsl(330, 3%, 13%)',
+  purpleBackgroundDark: '#1E1E3F',
+  purpleBackground: '#2D2B55',
+  purpleForeground: '#A599E9',
+  purpleHover: '#4D21FC',
+  purpleSecondary: '#FAD000',
+  gray: {
+    100: 'hsl(185, 5%, 95%)',
+    300: 'hsl(190, 5%, 80%)',
+    500: 'hsl(196, 4%, 60%)',
+    700: 'hsl(220, 5%, 40%)',
+    900: 'hsl(220, 3%, 20%)',
+  },
+  primary: 'hsl(70.11764705882352, 100%, 50%)',
+  secondary: 'hsl(301.15942028985506, 83.1325301204819%, 51.17647058823529%)',
+};
