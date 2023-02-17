@@ -17,7 +17,7 @@ const Footer = () => {
 
 const Wrapper = styled.footer`
   width: 100%;
-  background: black;
+  background: ${COLORS.purpleBackground};
   display: flex;
   row-gap: 16px;
   flex-direction: row;
@@ -33,7 +33,7 @@ const Links = styled.ul`
 
   a {
     display: flex;
-    color: ${COLORS.primary};
+    color: ${COLORS.purpleSecondary};
     font-size: ${24 / 16}rem;
     font-weight: bold;
     text-decoration: none;

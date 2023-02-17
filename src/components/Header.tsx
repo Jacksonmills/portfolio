@@ -16,15 +16,15 @@ const Header = () => {
     <Wrapper>
       <Logo>Jackson Mills</Logo>
       <NavControls>
-        <Link href='/'>
-          <PrimaryButton>Home</PrimaryButton>
-        </Link>
-        <Link href='/about'>
-          <PrimaryButton>About</PrimaryButton>
-        </Link>
-        <Link href='/projects'>
-          <PrimaryButton>Projects</PrimaryButton>
-        </Link>
+        <NavLink href='/'>
+          Home
+        </NavLink>
+        <NavLink href='/about'>
+          About
+        </NavLink>
+        <NavLink href='/projects'>
+          Projects
+        </NavLink>
         <Link href='/contact'>
           <PrimaryButton>Contact</PrimaryButton>
         </Link>
@@ -45,54 +45,19 @@ const Wrapper = styled.header`
 `;
 
 const PrimaryButton = styled(Button)`
-  --primary-color: ${COLORS.primary};
+  --primary-color: ${COLORS.purpleSecondary};
   --secondary-color: ${COLORS.offblack};
-`;
-
-const DropDown = styled.div`
-  --background-color: ${COLORS.black};
-  --color: ${COLORS.white};
-
-  position: absolute;
-  top: 100%;
-  right: 8px;
-  display: block;
-  min-width: 300px;
-  padding: 1em;
-  color: var(--color);
-  background-color: var(--background-color);
-  border-radius: 4px;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(-12px);
-  transition: transform 200ms ease, opacity 200ms ease;
-
-  &:focus-within {
-    pointer-events: initial;
-    opacity: 1;
-    transform: translateY(0px);
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: -4px;
-    right: 8px;
-    width: 10px;
-    height: 10px;
-    background-color: var(--background-color);
-    border-radius: 2px;
-    transform: rotate(45deg);
-  }
-
-  button {
-    width: 100%;
-  }
 `;
 
 const NavControls = styled.nav`
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 18px;
+`;
+
+const NavLink = styled(Link)`
+  font-size: ${20 / 16}rem;
+  color: ${COLORS.white};
 `;
 
 export default Header;
