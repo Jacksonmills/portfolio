@@ -5,8 +5,8 @@ export default styled.div`
   position: relative;
   min-height: 100%;
   padding-top: 84px;
-  color: ${COLORS.white};
-  background: ${COLORS.purpleBackground};
+  color: ${COLORS.black};
+  background: ${COLORS.offWhite};
   background-repeat: no-repeat;
   background-size: cover;
 `;

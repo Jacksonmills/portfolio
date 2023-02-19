@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <Wrapper>
-      <Logo>Jackson Mills</Logo>
+      <Logo>JEM</Logo>
       <NavControls>
         <NavLink href='/'>
           Home
@@ -36,17 +36,18 @@ const Header = () => {
 const Wrapper = styled.header`
   position: fixed;
   width: 100%;
-  background: ${COLORS.purpleBackgroundDark};
+  background: ${COLORS.black};
   color: ${COLORS.white};
   display: flex;
   align-items: center;
-  padding: 6px 24px;
+  padding: 12px 24px;
   z-index: 99;
 `;
 
 const PrimaryButton = styled(Button)`
-  --primary-color: ${COLORS.purpleSecondary};
-  --secondary-color: ${COLORS.offblack};
+  --primary-color: ${COLORS.secondary};
+  --secondary-color: ${COLORS.black};
+  background-image: ${COLORS.primaryGradient};
 `;
 
 const NavControls = styled.nav`
@@ -58,6 +59,11 @@ const NavControls = styled.nav`
 const NavLink = styled(Link)`
   font-size: ${20 / 16}rem;
   color: ${COLORS.white};
+  transition: filter 100ms ease;
+
+  &:hover {
+    filter: brightness(90%);
+  }
 `;
 
 export default Header;

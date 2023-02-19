@@ -78,6 +78,10 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 400;
     font-display: swap;
   }
+  @font-face {
+    font-family: 'thunder';
+    src: url('/fonts/Thunder/Thunder-BlackLC.ttf');
+  }
   /* PORTALS */
   #modal {
     position: relative;

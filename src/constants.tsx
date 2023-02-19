@@ -15,6 +15,10 @@ export const COLORS = {
     700: 'hsl(220, 5%, 40%)',
     900: 'hsl(220, 3%, 20%)',
   },
-  primary: 'hsl(70.11764705882352, 100%, 50%)',
-  secondary: 'hsl(301.15942028985506, 83.1325301204819%, 51.17647058823529%)',
+  primary: 'hsl(252, 97%, 56%)',
+  secondary: 'hsl(50, 100%, 49%)',
+  alternate: 'hsl(337, 100%, 50%)',
+  primaryGradient: `linear-gradient(90deg, hsl(252deg 97% 56%) 0%, hsl(337deg 100% 50%) 50%, hsl(50deg 100% 49%) 100%)`
 };
+
+

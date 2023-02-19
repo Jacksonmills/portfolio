@@ -9,10 +9,13 @@ function TechCard({ children }: any) {
 }
 
 const Wrapper = styled.div`
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 1.6em;
   border-radius: 1rem;
-  background-color: ${COLORS.purpleSecondary};
-  min-width: 100px;
+  background-color: ${COLORS.secondary};
+  min-width: 200px;
 `;
 
 export default TechCard;

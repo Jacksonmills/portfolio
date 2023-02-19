@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import { GitHub } from 'react-feather';
+import { GitHub, Linkedin } from 'react-feather';
 import { COLORS } from '@/constants';
 
 const Footer = () => {
@@ -10,6 +10,9 @@ const Footer = () => {
         <Link href='https://github.com/Jacksonmills/portfolio'>
           <GitHub />
         </Link>
+        <Link href='https://www.linkedin.com/in/jackson-mills-76776a4b/'>
+          <Linkedin />
+        </Link>
       </Links>
     </Wrapper>
   );
@@ -17,7 +20,7 @@ const Footer = () => {
 
 const Wrapper = styled.footer`
   width: 100%;
-  background: ${COLORS.purpleBackground};
+  background: ${COLORS.black};
   display: flex;
   row-gap: 16px;
   flex-direction: row;

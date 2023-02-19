@@ -13,13 +13,13 @@ function TechList({ tech }: { tech: string[]; }) {
 
 const Wrapper = styled.div`
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: ${COLORS.purpleHover};
+  background-color: ${COLORS.primary};
   color: ${COLORS.black};
-  padding: 1rem;
-  gap: 1rem;
+  padding: 4em;
+  gap: 2em;
 `;
 
 export default TechList;
