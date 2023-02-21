@@ -6,6 +6,7 @@ import { COLORS } from '@/constants';
 const Footer = () => {
   return (
     <Wrapper>
+      TEST
       <Links>
         <Link href='https://github.com/Jacksonmills/portfolio'>
           <GitHub />
