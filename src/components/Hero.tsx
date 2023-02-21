@@ -7,7 +7,7 @@ import PrimaryButton from './PrimaryButton';
 function Hero() {
   return (
     <Wrapper>
-      <Blurb>{`Hey, I'm`} <FancyText>JACKSON MILLS</FancyText>{`, a Frontend Engineer from Chicago, IL`}</Blurb>
+      <Blurb>{`Hey, I'm Jackson Eroe Mills (`}<FancyText>JEM</FancyText>{`), a Frontend Engineer from Chicago, IL`}</Blurb>
       <HeroImage width={400} height={400} src="/img/avatar.png" alt="" />
     </Wrapper>
   );
@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 `;
 
 const Blurb = styled.p`
-  font-size: ${32 / 16}rem;
+  font-size: ${22 / 16}rem;
 `;
 
 const FancyText = styled.span`

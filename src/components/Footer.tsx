@@ -26,7 +26,7 @@ const Wrapper = styled.footer`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 16px 24px;
+  padding: 28px 24px;
   z-index: 99;
 `;
 
