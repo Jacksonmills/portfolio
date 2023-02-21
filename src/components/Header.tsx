@@ -6,8 +6,9 @@ import Image from 'next/image';
 import { COLORS } from '@/constants';
 
 import Button from '@/components/Button';
-import { PlusCircle } from 'react-feather';
+import { GitHub, Linkedin } from 'react-feather';
 import Logo from './Logo';
+import PrimaryButton from './PrimaryButton';
 
 const Header = () => {
   const isDev = process.env.NODE_ENV !== 'production';
@@ -16,14 +17,11 @@ const Header = () => {
     <Wrapper>
       <Logo>JEM</Logo>
       <NavControls>
-        <NavLink href='/'>
-          Home
+        <NavLink href='https://github.com/Jacksonmills/portfolio'>
+          <GitHub />
         </NavLink>
-        <NavLink href='/about'>
-          About
-        </NavLink>
-        <NavLink href='/projects'>
-          Projects
+        <NavLink href='https://www.linkedin.com/in/jackson-mills-76776a4b/'>
+          <Linkedin />
         </NavLink>
         <Link href='/contact'>
           <PrimaryButton>Contact</PrimaryButton>
@@ -40,14 +38,9 @@ const Wrapper = styled.header`
   color: ${COLORS.white};
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 12px 24px;
   z-index: 99;
-`;
-
-const PrimaryButton = styled(Button)`
-  --primary-color: ${COLORS.secondary};
-  --secondary-color: ${COLORS.black};
-  background-image: ${COLORS.primaryGradient};
 `;
 
 const NavControls = styled.nav`
@@ -57,12 +50,16 @@ const NavControls = styled.nav`
 `;
 
 const NavLink = styled(Link)`
+  display: inline-flex;
   font-size: ${20 / 16}rem;
   color: ${COLORS.white};
-  transition: filter 100ms ease;
+  padding: 12px;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: background-color 100ms ease;
 
   &:hover {
-    filter: brightness(90%);
+    background-color: ${COLORS.offBlack};
   }
 `;
 

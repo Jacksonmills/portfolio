@@ -2,7 +2,7 @@ export const COLORS = {
   white: 'hsl(0, 0%, 100%)',
   offWhite: 'hsl(45, 30%, 96%)',
   black: 'hsl(0, 0%, 0%)',
-  offblack: 'hsl(330, 3%, 13%)',
+  offBlack: 'hsl(330, 3%, 13%)',
   purpleBackgroundDark: '#1E1E3F',
   purpleBackground: '#2D2B55',
   purpleForeground: '#A599E9',

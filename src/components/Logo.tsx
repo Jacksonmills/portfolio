@@ -7,7 +7,7 @@ export default styled.div`
   margin-right: auto;
   pointer-events: none;
   user-select: none;
-  display: flex;
+  display: inline-flex;
   position: relative;
   top: 4px;
 `;

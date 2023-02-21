@@ -9,10 +9,11 @@ export default styled.button`
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: 1em;
+  border-radius: 50px;
   padding: 1em 2em;
   font-size: ${14 / 16}rem;
   font-weight: bold;
+  font-family: 'firaCodeRegular';
   color: var(--secondary-color);
   background-color: var(--primary-color);
   text-decoration: none;
@@ -21,7 +22,7 @@ export default styled.button`
   text-decoration: none;
 
   &:hover {
-    filter: brightness(90%);
+    filter: brightness(110%);
   }
 
   @media (min-width: 768px) {
