@@ -1,17 +1,19 @@
-import { FormEvent, useState } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
-import Image from 'next/image';
 
 import { COLORS } from '@/constants';
 
-import Button from '@/components/Button';
 import { GitHub, Linkedin } from 'react-feather';
 import Logo from './Logo';
 import PrimaryButton from './PrimaryButton';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Header = () => {
-  const isDev = process.env.NODE_ENV !== 'production';
+  const handleCopyEmailToClipboard = () => {
+    navigator.clipboard.writeText('jacksonemills@gmail.com');
+    toast('📝 Email copied to clipboard, looking forward to hearing from you!');
+  };
 
   return (
     <Wrapper>
@@ -23,9 +25,16 @@ const Header = () => {
         <NavLink href='https://www.linkedin.com/in/jackson-mills-76776a4b/'>
           <Linkedin />
         </NavLink>
-        <Link href='/contact'>
-          <PrimaryButton>Contact</PrimaryButton>
-        </Link>
+        <PrimaryButton onClick={handleCopyEmailToClipboard}>Contact</PrimaryButton>
+        <ToastContainer
+          position="top-center"
+          autoClose={2500}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          draggable
+          pauseOnHover
+        />
       </NavControls>
     </Wrapper>
   );
@@ -39,7 +48,7 @@ const Wrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
+  padding: 8px 24px;
   z-index: 99;
 `;
 

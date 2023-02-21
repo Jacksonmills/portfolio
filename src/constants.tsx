@@ -18,7 +18,7 @@ export const COLORS = {
   primary: 'hsl(252, 97%, 56%)',
   secondary: 'hsl(50, 100%, 49%)',
   alternate: 'hsl(337, 100%, 50%)',
-  primaryGradient: `linear-gradient(90deg, hsl(252deg 97% 56%) 0%, hsl(337deg 100% 50%) 50%, hsl(50deg 100% 49%) 100%)`
+  primaryGradient: `linear-gradient(45deg, hsl(252deg 97% 56%) 0%, hsl(337deg 100% 50%) 50%, hsl(50deg 100% 49%) 100%)`
 };
 
 

@@ -63,6 +63,9 @@ const GlobalStyles = createGlobalStyle`
   #__next {
     isolation: isolate;
   }
+  :root {
+    --toastify-toast-width: 420px;
+  }
   /* FONTS */
   @font-face {
     font-family: 'firaCodeRegular';

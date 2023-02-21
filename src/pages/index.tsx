@@ -10,7 +10,7 @@ import Projects from '@/components/Projects';
 import Hero from '@/components/Hero';
 
 
-const tech = ['JavaScript', 'TypeScript', 'React', 'Redux', 'Node', 'Express', 'MongoDB'];
+const tech = ['JavaScript', 'TypeScript', 'SCSS', 'React', 'Nextjs', 'styled-components', 'Django', 'MySQL', 'MongoDB', 'JIRA', 'Git'];
 
 export default function Home() {
   return (
