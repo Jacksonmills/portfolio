@@ -10,8 +10,6 @@ export default styled.button`
   justify-content: center;
   border: none;
   border-radius: 50px;
-  padding: 8px 18px;
-  font-size: ${14 / 16}rem;
   font-weight: bold;
   font-family: 'firaCodeRegular';
   color: var(--secondary-color);
@@ -20,13 +18,15 @@ export default styled.button`
   cursor: pointer;
   transition: filter 100ms ease;
   text-decoration: none;
-
+  
   &:hover {
     filter: brightness(110%);
   }
-
+  
+  font-size: ${14 / 16}rem;
+  padding: 8px 18px;
   @media (min-width: 768px) {
     font-size: ${18 / 16}rem;
-    padding: 16px 32px;
+    padding: 12px 32px;
   }
 `;

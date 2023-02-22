@@ -11,13 +11,13 @@ const Header = () => {
     <Wrapper>
       <Logo>JEM</Logo>
       <ContactLinks>
-        <ContactLink href='https://github.com/Jacksonmills/portfolio'>
+        <ContactLink href='https://github.com/Jacksonmills/'>
           <GitHub />
         </ContactLink>
         <ContactLink href='https://www.linkedin.com/in/jackson-mills-76776a4b/'>
           <Linkedin />
         </ContactLink>
-        <CopyToClipboardButton content={`jacksonemills@gmail.com`} successMessage={`📝 Email copied to clipboard, looking forward to hearing from you!`}>Contact me</CopyToClipboardButton>
+        <CopyToClipboardButton content={`jacksonemills@gmail.com`} successMessage={`📝 Email copied to clipboard, looking forward to hearing from you!`}>Email me</CopyToClipboardButton>
       </ContactLinks>
     </Wrapper>
   );

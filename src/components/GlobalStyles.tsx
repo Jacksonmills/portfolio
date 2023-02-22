@@ -1,3 +1,4 @@
+import { COLORS } from '@/constants';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
@@ -65,6 +66,7 @@ const GlobalStyles = createGlobalStyle`
   }
   :root {
     --toastify-toast-width: 420px;
+    --toastify-color-progress-light: ${COLORS.primaryGradient};
   }
   /* FONTS */
   @font-face {

@@ -21,7 +21,7 @@ export type Project = {
 const projectsData: Project[] = [
   {
     name: 'Product catalog and buy section user experience',
-    description: 'I began writing JavaScript confidently creating interactive product tiles, listing filters, and buy sections. Mastered many important CSS concepts, including flexbox, grid, and animations.',
+    description: 'I created rich interactive javascript components using advanced CSS concepts included flex box, grid, and animations. This enabled users to easily browse, find, and buy the right products.',
     link: 'https://steelseries.com/gaming-mice/rival-gaming-mice?grip-style=claw-fingertip',
     image: {
       url: '/img/category_page.png',
@@ -32,7 +32,7 @@ const projectsData: Project[] = [
   },
   {
     name: 'Customizable gaming mice suite',
-    description: 'We wanted to provide a user experience allowing the user to fully customize a gaming mouse with a 3D model that updates as the user creates their mouse.',
+    description: 'Providing a user experience allowing the user to fully customize a gaming mouse with a 3D model that updates as the user creates their mouse.',
     link: 'https://steelseries.com/gaming-mice/aerox-3-2022?cable-color=black&cable-length=long&cable-material=super-mesh&cable-usb-type=a-to-c&connectivity=wired&mouse-body-color=jade&mouse-feet-color=black&mouse-feet-material=ptfe',
     image: {
       url: '/img/custom_mice.png',
@@ -60,7 +60,7 @@ const projectsData: Project[] = [
       url: '/img/cmsplugin_hotspots.png',
       width: 1554,
       height: 626,
-      alt: 'A website with hotspots ontop of a product photo that allows the user with mouse or keyboard to select and trigger info regarding the product.',
+      alt: 'A website with hotspots on top of a product photo that allows the user with mouse or keyboard to select and trigger info regarding the product.',
     },
   }
 ];

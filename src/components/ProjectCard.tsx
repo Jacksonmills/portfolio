@@ -6,6 +6,7 @@ import { COLORS } from '@/constants';
 import Link from 'next/link';
 import { ArrowUpRight } from 'react-feather';
 import Button from './Button';
+import GradientBorder from './GradientBorder';
 
 function ProjectCard({ name, description, link, image }: Project) {
   return (
@@ -19,7 +20,9 @@ function ProjectCard({ name, description, link, image }: Project) {
           </StyledLink>
         )}
       </Info>
-      {image && (<StyledImage src={image?.url} alt={image?.alt} width={image?.width} height={image?.height} />)}
+      <GradientBorder gradient={COLORS.primaryGradient} radius={12} size={12}>
+        {image && (<StyledImage src={image?.url} alt={image?.alt} width={image?.width} height={image?.height} />)}
+      </GradientBorder>
     </Wrapper>
   );
 }
@@ -51,15 +54,13 @@ const StyledLink = styled(Link)`
   ${Button} {
     display: flex;
     gap: 8px;
+    padding-right: 22px;
   }
 `;
 
 const StyledImage = styled(Image)`
   width: 100%;
   height: auto;
-  border-radius: 12px;
-  border: 8px solid ${COLORS.secondary};
-  background-color: ${COLORS.secondary};
 
   @media (min-width: 1200px) {
     max-width: 800px;

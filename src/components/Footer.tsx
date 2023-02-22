@@ -13,17 +13,17 @@ const Footer = () => {
   return (
     <Wrapper>
       <TextInfo>
-        <Name>Jackson Mills</Name>
-        <Email onClick={() => handleCopyToClipboard('jacksonemills@gmail.com', '📝 Email copied to clipboard, looking forward to hearing from you!')}>jacksonemills@gmail.com</Email>
+        <Address>Chicago, IL 60618</Address>
+        <Email onClick={() => handleCopyToClipboard('jacksonemills@gmail.com', '📝 Email copied to clipboard, looking forward to hearing from you!')}>jacksonemills@gmail.com <Clipboard /></Email>
       </TextInfo>
       <ContactLinks>
-        <ContactLink href='https://github.com/Jacksonmills/portfolio'>
+        <ContactLink href='https://github.com/Jacksonmills/'>
           <GitHub />
         </ContactLink>
         <ContactLink href='https://www.linkedin.com/in/jackson-mills-76776a4b/'>
           <Linkedin />
         </ContactLink>
-        <CopyToClipboardButton content={`jacksonemills@gmail.com`} successMessage={`📝 Email copied to clipboard, looking forward to hearing from you!`}><Clipboard /></CopyToClipboardButton>
+        <CopyToClipboardButton content={`jacksonemills@gmail.com`} successMessage={`📝 Email copied to clipboard, looking forward to hearing from you!`}>Email me</CopyToClipboardButton>
       </ContactLinks>
     </Wrapper>
   );
@@ -44,13 +44,29 @@ const TextInfo = styled.div`
   color: ${COLORS.gray[500]};
   margin-right: auto;
 `;
-const Name = styled.div``;
+const Address = styled.div``;
 const Email = styled(UnstyledButton)`
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   color: currentColor;
+  padding: 2px 4px;
+  margin: 0 -4px;
+  border-radius: 4px;
 
   &:hover {
-    text-decoration: underline;
+    background-color: ${COLORS.gray[900]};
+  }
+
+  svg {
+    --size: 1.25em;
+    display: inline-flex;
+    width: var(--size);
+    height: var(--size);
+    position: relative;
+    top: -1px;
   }
 `;
 
