@@ -7,10 +7,13 @@ import Link from 'next/link';
 import { ArrowUpRight } from 'react-feather';
 import Button from './Button';
 import GradientBorder from './GradientBorder';
+import useIsOnScreen from '@/hooks/useIsOnScreen';
 
 function ProjectCard({ name, description, link, image }: Project) {
+  const { isOnScreen, elementRef } = useIsOnScreen();
+
   return (
-    <Wrapper>
+    <Wrapper className={`${isOnScreen && 'show'}`} ref={elementRef}>
       <Info>
         <Name>{name}</Name>
         <Desc>{description}</Desc>
@@ -28,6 +31,7 @@ function ProjectCard({ name, description, link, image }: Project) {
 }
 
 const Wrapper = styled.div`
+  overflow: hidden;
   display: flex;
   flex-direction: column-reverse;
   gap: 12px;
@@ -35,6 +39,19 @@ const Wrapper = styled.div`
 
   @media (min-width: 1200px) {
     flex-direction: row;
+  }
+
+  // animation
+  opacity: 0;
+  transform: translateX(-25%);
+  &.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  transition: all 500ms ease-out;
+  @media(prefers-reduced-motion) {
+    transition: none;
   }
 `;
 
