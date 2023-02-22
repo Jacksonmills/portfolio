@@ -72,18 +72,19 @@ const GlobalStyles = createGlobalStyle`
     src: url('/fonts/FiraCode/FiraCode-Regular.ttf');
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: fallback; // fix for SSR
   }
   @font-face {
     font-family: 'firaCodeBold';
     src: url('/fonts/FiraCode/FiraCode-Bold.ttf');
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: fallback; // fix for SSR
   }
   @font-face {
     font-family: 'thunder';
     src: url('/fonts/Thunder/Thunder-BlackLC.ttf');
+    font-display: fallback; // fix for SSR
   }
   /* PORTALS */
   #modal {

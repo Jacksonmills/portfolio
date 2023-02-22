@@ -7,7 +7,7 @@ import Logo from './Logo';
 function Hero() {
   return (
     <Wrapper>
-      <Blurb>{`Hey, I'm Jackson Eroe Mills (`}<FancyText>JEM</FancyText>{`), a Frontend Engineer from Chicago, IL`}</Blurb>
+      <Blurb>{`Hey, I'm Jackson Eroe Mills (`}<FancyText as="span">JEM</FancyText>{`), a Frontend Engineer from Chicago, IL`}</Blurb>
       <HeroImageWrapper>
         <Image width={400} height={400} src="/img/avatar.png" alt="" />
       </HeroImageWrapper>
