@@ -23,7 +23,9 @@ const Footer = () => {
         <ContactLink href='https://www.linkedin.com/in/jackson-mills-76776a4b/'>
           <Linkedin />
         </ContactLink>
-        <CopyToClipboardButton content={`jacksonemills@gmail.com`} successMessage={`📝 Email copied to clipboard, looking forward to hearing from you!`}>Email me</CopyToClipboardButton>
+        <HideOnMobile>
+          <CopyToClipboardButton content={`jacksonemills@gmail.com`} successMessage={`📝 Email copied to clipboard, looking forward to hearing from you!`}>Email me</CopyToClipboardButton>
+        </HideOnMobile>
       </ContactLinks>
     </Wrapper>
   );
@@ -67,6 +69,12 @@ const Email = styled(UnstyledButton)`
     height: var(--size);
     position: relative;
     top: -1px;
+  }
+`;
+
+const HideOnMobile = styled.div`
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
