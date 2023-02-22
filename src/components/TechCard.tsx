@@ -2,7 +2,7 @@ import { COLORS } from '@/constants';
 import React from 'react';
 import styled from 'styled-components';
 
-function TechCard({ children }: any) {
+function TechCard({ children }: { children: React.ReactNode; }) {
   return (
     <Wrapper>
       <Text>{children}</Text>

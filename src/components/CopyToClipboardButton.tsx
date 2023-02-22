@@ -9,7 +9,15 @@ export const handleCopyToClipboard = (payload: string, message: string) => {
   toast(message);
 };
 
-function CopyToClipboardButton({ content, successMessage = `${content} copied to clipboard`, children }: { content: string, successMessage?: string; children: any; }) {
+function CopyToClipboardButton({
+  content,
+  successMessage = `${content} copied to clipboard`,
+  children
+}: {
+  content: string,
+  successMessage?: string;
+  children: React.ReactNode;
+}) {
   return (
     <>
       <PrimaryButton onClick={() => handleCopyToClipboard(content, successMessage)}>{children}</PrimaryButton>

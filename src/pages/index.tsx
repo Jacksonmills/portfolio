@@ -3,9 +3,6 @@ import SiteLayoutWrapper from '@/components/SiteLayoutWrapper';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import VisuallyHidden from '@/components/VisuallyHidden';
 import TechList from '@/components/TechList';
-import Image from 'next/image';
-import { COLORS } from '@/constants';
-import PrimaryButton from '@/components/PrimaryButton';
 import Projects from '@/components/Projects';
 import Hero from '@/components/Hero';
 

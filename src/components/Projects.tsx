@@ -1,5 +1,4 @@
 import { COLORS } from '@/constants';
-import Image from 'next/image';
 import React from 'react';
 import styled from 'styled-components';
 import MaxWidthWrapper from './MaxWidthWrapper';
