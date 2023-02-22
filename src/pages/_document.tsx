@@ -5,21 +5,19 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
-import { CSSProperties, ServerStyleSheet } from 'styled-components';
+import { ServerStyleSheet } from 'styled-components';
 interface PageDocumentProps {
   __NEXT_DATA__: {
-    props: {
-      appProps: any;
-    };
+    props: any;
   };
 }
 export default function PageDocument({
   __NEXT_DATA__: {
-    props: { appProps },
+    props,
   },
 }: PageDocumentProps) {
   return (
-    <Html lang={appProps.lang}>
+    <Html lang="en">
       <Head />
       <body>
         <Main />
