@@ -5,6 +5,8 @@ export default styled.div`
   font-size: ${64 / 16}rem;
   font-family: 'thunder';
   color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-right: auto;
   pointer-events: none;
   user-select: none;

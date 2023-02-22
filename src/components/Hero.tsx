@@ -2,7 +2,7 @@ import { COLORS } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
 import styled from 'styled-components';
-import PrimaryButton from './PrimaryButton';
+import Logo from './Logo';
 
 function Hero() {
   return (
@@ -36,15 +36,8 @@ const Blurb = styled.p`
   }
 `;
 
-const FancyText = styled.span`
+const FancyText = styled(Logo)`
   font-size: ${48 / 16}rem;
-  color: transparent;
-  font-family: 'thunder';
-  background-image: ${COLORS.primaryGradient};
-  background-clip: text;
-  white-space: nowrap;
-  position: relative;
-  top: 1px;
 `;
 
 const HeroImageWrapper = styled.div`
