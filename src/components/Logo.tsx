@@ -13,4 +13,5 @@ export default styled.div`
   display: inline-flex;
   position: relative;
   top: 4px;
+  letter-spacing: 0.5px;
 `;

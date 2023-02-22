@@ -14,10 +14,15 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2em 1.6em;
-  border-radius: 12px;
-  background-color: ${COLORS.secondary};
-  min-width: 200px;
+  padding: 4px 22px;
+  border-radius: 50px;
+  color: ${COLORS.white};
+  background-color: ${COLORS.black};
+  
+  font-size: ${14 / 16}rem;
+  @media (min-width: 768px) {
+    font-size: ${18 / 16}rem;
+  }
 `;
 
 const Text = styled.span`

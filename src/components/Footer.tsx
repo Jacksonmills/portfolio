@@ -1,51 +1,56 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import { GitHub, Linkedin } from 'react-feather';
+import { Clipboard, GitHub, Linkedin } from 'react-feather';
 import { COLORS } from '@/constants';
+import ContactLinks from './ContactLinks';
+import ContactLink from './ContactLink';
+import { ToastContainer } from 'react-toastify';
+import PrimaryButton from './PrimaryButton';
+import CopyToClipboardButton, { handleCopyToClipboard } from './CopyToClipboardButton';
+import UnstyledButton from './UnstyledButton';
 
 const Footer = () => {
   return (
     <Wrapper>
-      TEST
-      <Links>
-        <Link href='https://github.com/Jacksonmills/portfolio'>
+      <TextInfo>
+        <Name>Jackson Mills</Name>
+        <Email onClick={() => handleCopyToClipboard('jacksonemills@gmail.com', '📝 Email copied to clipboard, looking forward to hearing from you!')}>jacksonemills@gmail.com</Email>
+      </TextInfo>
+      <ContactLinks>
+        <ContactLink href='https://github.com/Jacksonmills/portfolio'>
           <GitHub />
-        </Link>
-        <Link href='https://www.linkedin.com/in/jackson-mills-76776a4b/'>
+        </ContactLink>
+        <ContactLink href='https://www.linkedin.com/in/jackson-mills-76776a4b/'>
           <Linkedin />
-        </Link>
-      </Links>
+        </ContactLink>
+        <CopyToClipboardButton content={`jacksonemills@gmail.com`} successMessage={`📝 Email copied to clipboard, looking forward to hearing from you!`}><Clipboard /></CopyToClipboardButton>
+      </ContactLinks>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.footer`
   width: 100%;
-  background: ${COLORS.black};
+  background-color: ${COLORS.black};
   display: flex;
-  row-gap: 16px;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 28px 24px;
+  gap: 12px;
+  padding: 8px 24px;
   z-index: 99;
 `;
 
-const Links = styled.ul`
-  display: flex;
-  gap: 16px;
+const TextInfo = styled.div`
+  color: ${COLORS.gray[500]};
+  margin-right: auto;
+`;
+const Name = styled.div``;
+const Email = styled(UnstyledButton)`
+  cursor: pointer;
+  color: currentColor;
 
-  a {
-    display: flex;
-    color: ${COLORS.purpleSecondary};
-    font-size: ${24 / 16}rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: filter 200ms ease;
-
-    &:hover {
-      filter: brightness(0.75);
-    }
+  &:hover {
+    text-decoration: underline;
   }
 `;
 

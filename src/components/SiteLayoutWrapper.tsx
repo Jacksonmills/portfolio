@@ -10,9 +10,12 @@ const SiteLayoutWrapper = ({ children }: { children: React.ReactNode; }) => {
   return (
     <>
       <Head>
-        <title>{`Jackson Mills`}</title>
-        <meta name="description" content="Jem's portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>{`JEM`}</title>
+        <meta name="description" content="Hey, I'm Jackson Eroe Mills, a Frontend Engineer from Chicago, IL (Looking for work!)" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <Header />
       <Layout>
