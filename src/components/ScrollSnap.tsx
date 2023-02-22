@@ -7,7 +7,6 @@ export default styled.div`
   padding: 12px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  cursor: grab;
 
   > * {
     scroll-snap-align: start;

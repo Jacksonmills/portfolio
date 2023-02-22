@@ -14,20 +14,23 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px 22px;
   border-radius: 50px;
   color: ${COLORS.white};
   background-color: ${COLORS.black};
   
-  font-size: ${14 / 16}rem;
+  padding: 4px 22px;
   @media (min-width: 768px) {
-    font-size: ${18 / 16}rem;
+    padding: 22px 48px;
   }
 `;
 
 const Text = styled.span`
-  font-size: ${16 / 16}rem;
   font-family: 'firaCodeBold';
+
+  font-size: ${14 / 16}rem;
+  @media (min-width: 768px) {
+    font-size: ${22 / 16}rem;
+  }
 `;
 
 export default TechCard;
