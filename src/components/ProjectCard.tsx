@@ -42,16 +42,41 @@ const Wrapper = styled.div`
   }
 
   // animation
-  opacity: 0;
-  transform: translateX(-25%);
-  &.show {
-    opacity: 1;
-    transform: translateX(0);
+  & > :first-child {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  & > :last-child {
+    opacity: 0;
+    transform: translateX(100%);
   }
 
-  transition: all 500ms ease-out;
-  @media(prefers-reduced-motion) {
-    transition: none;
+  &.show {
+    & > :first-child {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    & > :last-child {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  & > :first-child {
+    transition: all 500ms ease-out;
+    transition-delay: 500ms;
+    
+    @media(prefers-reduced-motion) {
+      transition: none;
+    }
+  }
+  & > :last-child {
+    transition: all 500ms ease-out;
+    transition-delay: 0ms;
+
+    @media(prefers-reduced-motion) {
+      transition: none;
+    }
   }
 `;
 
