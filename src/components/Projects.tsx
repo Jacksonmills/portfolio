@@ -20,8 +20,19 @@ export type Project = {
 
 const projectsData: Project[] = [
   {
-    name: 'Product catalog and buy section user experience',
-    description: 'I created rich interactive javascript components using advanced CSS concepts included flex box, grid, and animations. This enabled users to easily browse, find, and buy the right products.',
+    name: 'Oki: Anonymous Chat App',
+    description: 'Developed Oki, a web and mobile chat application inspired by the "Okizeme" concept from fighting games. Leveraged socket.io to create real-time, anonymous, temporary chat experiences for events like fighting game tournaments. The app fosters a lively and engaging environment where users can interact without revealing their identities, enhancing the overall event experience.',
+    link: 'https://oki-chat.herokuapp.com/',
+    image: {
+      url: '/img/oki.png',
+      width: 1551,
+      height: 795,
+      alt: 'A webapp for chatting with others at a real life event'
+    },
+  },
+  {
+    name: 'Product Catalog and Buy Section User Experience',
+    description: 'I designed and developed engaging JavaScript components utilizing advanced CSS concepts, such as flexbox, grid, and animations. These interactive components allowed users to effortlessly browse, locate, and purchase the perfect products.',
     link: 'https://steelseries.com/gaming-mice/rival-gaming-mice?grip-style=claw-fingertip',
     image: {
       url: '/img/category_page.png',
@@ -31,8 +42,8 @@ const projectsData: Project[] = [
     },
   },
   {
-    name: 'Customizable gaming mice suite',
-    description: 'Providing a user experience allowing the user to fully customize a gaming mouse with a 3D model that updates as the user creates their mouse.',
+    name: 'Customizable Gaming Mice Suite',
+    description: 'Delivered an immersive user experience that enables users to personalize their gaming mouse using an interactive 3D model, which dynamically updates as they make their selections.',
     link: 'https://steelseries.com/gaming-mice/aerox-3-2022?cable-color=black&cable-length=long&cable-material=super-mesh&cable-usb-type=a-to-c&connectivity=wired&mouse-body-color=jade&mouse-feet-color=black&mouse-feet-material=ptfe',
     image: {
       url: '/img/custom_mice.png',
@@ -42,8 +53,8 @@ const projectsData: Project[] = [
     },
   },
   {
-    name: 'ComboZ: Build and share combos!',
-    description: 'Build and share combos from the hit fighting game Dragon Ball FighterZ',
+    name: 'ComboZ: Build, Share, and Practice Combos',
+    description: 'This interactive web app is tailored for Dragon Ball FighterZ players, offering a platform to build, share, and practice character combos, fostering a collaborative and skill-enhancing experience.',
     link: 'https://www.combo-z.com',
     image: {
       url: '/img/comboz.png',
@@ -53,8 +64,8 @@ const projectsData: Project[] = [
     },
   },
   {
-    name: 'Django CMS',
-    description: 'While maintaining, building new features in Django CMS, I became self sufficient in Python. Eventually building mini full-stack plugins that span many different and exciting possibilities like this Hotspots plugin.',
+    name: 'Django CMS Expertise',
+    description: 'Through maintaining and developing new features within Django CMS, I became proficient in Python and built numerous full-stack plugins with diverse functionalities, such as the innovative Hotspots plugin.',
     link: 'https://steelseries.com/',
     image: {
       url: '/img/cmsplugin_hotspots.png',
